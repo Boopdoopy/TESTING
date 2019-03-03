@@ -8,20 +8,20 @@ puts "What color is the hamster's fur?"
 fur_color = gets.chomp()
 
 #puts "Adoption status?"
-#adoption_status = Array["yes", "yes", "yes", "yes", "yes", "yes", "no", "no", "no", "no", "no"]
+adoption_status = ["yes", "yes", "yes", "yes", "yes", "yes", "no", "no", "no", "no", "no"]
 
-adoption_status = {
-	"1" => "yes",
-	"2" => "yes ",
-	"3" => "yes  ",
-	"4" => "yes    ",
-	"5" => "yes     ",
-	"6" => "no ",
-	"7" => "no  ",
-	"8" => "no   ",
-	"9" => "no    ",
-	"10" => "no    ",
-}
+#adoption_status = {
+#	"1" => "yes",
+#	"2" => "yes ",
+#	"3" => "yes  ",
+	# "4" => "yes    ",
+	# "5" => "yes     ",
+	# "6" => "no ",
+	# "7" => "no  ",
+	# "8" => "no   ",
+	# "9" => "no    ",
+	# "10" => "no    ",
+#}
 
 puts "How old is the hamster?"
 hamster_age = gets.chomp()
@@ -30,8 +30,8 @@ hamster_age = gets.chomp()
 puts "name: " + hamster_names
 puts "squeak volume: " + squeak_volume
 puts "fur color: " + fur_color
- puts "ready to adopt: " + adoption_status[squeak_volume]
-#puts "ready to adopt: " + adoption_status[squeak_volume.to_i]
+ #puts "ready to adopt: " + adoption_status[squeak_volume]
+puts "ready to adopt: " + adoption_status[squeak_volume.to_i]
 #.to_i  after varible makes it into a number
 puts "current age: " + hamster_age
 
